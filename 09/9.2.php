@@ -11,9 +11,6 @@ $testHighScore = $matches[4] ?? null;
 $lastMarbleValue *= 100;
 $players = array_fill(0, $nbPlayers, 0);
 
-// $marbles = [0];
-
-// $currentMarbleIndex = 0;
 $currentMarble = new Marble();
 $currentMarble->prev = $currentMarble;
 $currentMarble->next = $currentMarble;
