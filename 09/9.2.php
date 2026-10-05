@@ -6,6 +6,7 @@ $input = trim(fgets(STDIN));
 
 preg_match('/^(\d+).* worth (\d+)[^\d]+( is (\d+))?$/', $input, $matches);
 [, $nbPlayers, $lastMarbleValue] = $matches;
+$nbPlayers = (int) $nbPlayers;
 $testHighScore = $matches[4] ?? null;
 
 $lastMarbleValue *= 100;
